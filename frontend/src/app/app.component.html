@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+  <h3>
+    Scan code with your favourite app
+  </h3>
+  <img [src]="secret" style="padding: 10px">
+  <form [formGroup]="verifyTokenForm">
+    <div>
+      Introducir token para validar:
+      <input type="text" name="user" placeholder="Insertar token..." formControlName="token">
+    </div>
+    <button (click)="verifyToken()">VERIFICAR</button>
+  </form>
+  <label>{{responseVerify}}</label>
+</div>
+
+
