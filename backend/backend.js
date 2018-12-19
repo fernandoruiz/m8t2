@@ -1,9 +1,9 @@
-let express = require('express')
-let speakeasy = require("speakeasy");
-let QRCode = require('qrcode');
-let cors = require('cors')
+var express = require('express')
+var speakeasy = require("speakeasy");
+var QRCode = require('qrcode');
+var cors = require('cors')
 
-let app = express();
+var app = express();
 app.use(cors());
 
 const options = {
@@ -11,7 +11,7 @@ const options = {
     name: `M2T8 (fernandotic79@gmail.com)`,
     length: 64
 }
-let secret = speakeasy.generateSecret(options);
+var secret = speakeasy.generateSecret(options);
 
 app.get('/', function (req, res) {
     //using speakeasy to generate one time token.

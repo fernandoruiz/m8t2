@@ -10,7 +10,7 @@ import {FormControl, FormGroup} from "@angular/forms";
 export class AppComponent implements OnInit {
   title = 'm8t2-project';
 
-  BASE_URL = 'http://10.40.15.32:3000/';
+  BASE_URL = 'http://192.168.0.154:3000/';
 
   secret;
   verifyTokenForm: FormGroup;
