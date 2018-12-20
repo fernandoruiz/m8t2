@@ -4,17 +4,26 @@
     {{ title }}
   </h1>
   <h3>
-    Scan code with your favourite app
+    Scan the following QR code
   </h3>
   <img [src]="secret" style="padding: 10px">
   <form [formGroup]="verifyTokenForm">
     <div>
-      Introducir token para validar:
-      <input type="text" name="user" placeholder="Insertar token..." formControlName="token">
+      Type a TOTP token below for verification
     </div>
-    <button (click)="verifyToken()">VERIFICAR</button>
+    <br>
+    <div>
+      <input type="text" name="user" placeholder="Type token..." formControlName="token">
+    </div>
+    <br>
+    <div>
+      <button (click)="verifyToken()">VERIFY</button>
+    </div>
   </form>
-  <label>{{responseVerify}}</label>
+  <br>
+  <div>
+    <label>{{responseVerify}}</label>
+  </div>
 </div>
 
 

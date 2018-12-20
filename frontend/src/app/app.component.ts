@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {FormControl, FormGroup} from "@angular/forms";
+import {environment} from "../environments/environment";
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,9 @@ import {FormControl, FormGroup} from "@angular/forms";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'm8t2-project';
+  title = 'M8T2 Project - Two Factor Authentication';
 
-  BASE_URL = 'http://192.168.0.154:3000/';
+  BASE_URL = environment.baseUrl;
 
   secret;
   verifyTokenForm: FormGroup;
