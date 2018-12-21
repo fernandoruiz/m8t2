@@ -31,12 +31,12 @@ ng build --prod
 
 ## Running
 
-Para lanzar el frontend, navegamos al directorio frontend/dist/m8t2-project y ejecutamos:
+Para lanzar el frontend (por defecto lo hará en el puerto 4200 de localhost), navegamos al directorio frontend/dist/m8t2-project y ejecutamos:
 ```
 ng serve
 ```
 
-Para lanzar el backend, navegamos al directorio backend y ejecutamos:
+Para lanzar el backend (puerto 3000), navegamos al directorio backend y ejecutamos:
 ```
 node backend.js
 ```
