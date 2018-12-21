@@ -7,8 +7,8 @@ var app = express();
 app.use(cors());
 
 const options = {
-    issuer: `M2T8`,
-    name: `M2T8 (fernandotic79@gmail.com)`,
+    issuer: `M8T2`,
+    name: `M8T2 (testUser@gmail.com)`,
     length: 64
 }
 var secret = speakeasy.generateSecret(options);
